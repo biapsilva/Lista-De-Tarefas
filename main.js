@@ -10,8 +10,13 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
         const novaTarefa = $('#novaTarefa').val();
-        const novoItem = $('<li></li>');
-        $(`<input type="text" required placeholder="${novaTarefa}" />`).appendTo(novoItem);
+        const novoItem = $(`<li>${novaTarefa}</li>`);
         $(novoItem).appendTo('ul');
     })
-})
+    })
+    $("form").on("submit", function (e {
+        e.preventDefault();
+        const NovaTarefa = $("#novaTarefa").val();
+        const novoItem = $(`<li>${novaTarefa}</li>`);
+        $(novoItem).appendTo("ul");
+    }))
