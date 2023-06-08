@@ -14,9 +14,4 @@ $(document).ready(function() {
         $(novoItem).appendTo('ul');
     })
     })
-    $("form").on("submit", function (e {
-        e.preventDefault();
-        const NovaTarefa = $("#novaTarefa").val();
-        const novoItem = $(`<li>${novaTarefa}</li>`);
-        $(novoItem).appendTo("ul");
-    }))
+    
